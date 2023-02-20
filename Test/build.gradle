@@ -1,0 +1,15 @@
+plugins {
+	id 'java-library'
+}
+
+jar {
+	manifest{
+		attributes 'Main-Class': 'GradleSample.Main'
+	}
+}
+
+task hello {
+	doLast {
+		println 'Hello World'
+	}
+}
